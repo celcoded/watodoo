@@ -19,12 +19,12 @@ function ThemeWrapper({ children }: { children: React.ReactNode }) {
     typography: {
       fontFamily: '"Inter", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif',
       h3: {
-        fontWeight: 700,
-        fontSize: { xs: '1.75rem', sm: '2.5rem' },
+          fontWeight: 700 as const,
+          fontSize: '2.5rem',
       },
-      h5: {
+        h5: { 
         fontWeight: 600,
-        fontSize: { xs: '1.25rem', sm: '1.5rem' },
+        fontSize: '1.5rem',
       },
       h6: {
         fontWeight: 600,
